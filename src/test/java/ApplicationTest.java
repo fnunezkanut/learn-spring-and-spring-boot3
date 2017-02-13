@@ -1,4 +1,5 @@
 import com.oreilly.Application;
+import com.oreilly.controller.HiController;
 import org.hamcrest.Matchers;
 import org.junit.Before;
 import org.junit.Test;
@@ -20,7 +21,8 @@ public class ApplicationTest {
 	@Before
 	public void setUp() throws Exception{
 
-		mockMvc = MockMvcBuilders.standaloneSetup( new Application() ).build();
+		//our hi controller test
+		mockMvc = MockMvcBuilders.standaloneSetup( new HiController() ).build();
 	}
 
 	@Test
