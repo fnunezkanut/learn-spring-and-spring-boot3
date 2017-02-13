@@ -1,0 +1,7 @@
+server:
+  port: 9000
+  context-path: /test
+
+framework:
+  type: Framework
+  name: Spring Boot ${framework.type}
